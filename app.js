@@ -11,7 +11,8 @@ $("#root").append("<button id='add_task'></button>")
 		i = i + 1;
 		var tmp = $("input").val();
 		$("ul").append($("<li></li>").attr("id", i));
-		$("#" + i).append($("<span></span>").text(tmp));
+		var x = "<span>" + tmp + "</span>";
+		$("#" + i).append(x);
 		$("#" + i).append("<button>Удалить</button>").click(function() {
 	$(this).remove();
 });
