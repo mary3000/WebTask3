@@ -10,8 +10,8 @@ $("#root").append("<button id='add_task'></button>")
 	$("#add_task").click(function() {
 		i = i + 1;
 		var tmp = $("input").val();
-		$("ul").append($("<li><span></span></li>").attr("id", i));
-		$("#" + i).text(tmp);
+		$("ul").append($("<li></li>").attr("id", i));
+		$("#" + i).append($("<span></span>").text(tmp));
 		$("#" + i).append("<button>Удалить</button>").click(function() {
 	$(this).remove();
 });
